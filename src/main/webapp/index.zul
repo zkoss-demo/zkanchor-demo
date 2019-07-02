@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+	<window title="Anchor demo">
+		<zk xmlns:ca="client/attribute">
+			<hlayout>
+				<anchor name="a1"/>
+			</hlayout>
+			<separator/>
+			<div height="100px"></div>
+			<window id="win1" ca:data-anchor="a1" ca:data-anchortitle="1. ZK Demo" title="1. ZK Demo" height="300px"
+					width="700px"
+					border="normal" style="margin:0 auto">
+				ZK Demo 1
+			</window>
+			<div height="300px"></div>
+			<window id="win2" ca:data-anchor="a1" ca:data-anchortitle="2. ZK Blog" title="2. ZK Blog" height="300px"
+					width="700px"
+					border="normal" style="margin:0 auto">
+				ZK Blog 2
+			</window>
+			<div height="300px"></div>
+			<window id="win3" ca:data-anchor="a1" ca:data-anchortitle="3. ZK SmallTalk" title="3. ZK SmallTalk"
+					height="300px" width="700px"
+					border="normal" style="margin:0 auto">
+				ZK SmallTalk 3
+			</window>
+			<div height="500px"></div>
+		</zk>
+	</window>
+</zk>
