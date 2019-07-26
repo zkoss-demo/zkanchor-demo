@@ -23,7 +23,7 @@ repositories {
 
 dependencies {
     compile "org.zkoss.zk:zul:${zkVersion}"
-    compile 'org.zkoss.addon:anchor:0.8.0.FL.20190704-Eval'
+    compile 'org.zkoss.addon:anchornav:0.8.0.FL.20190724-Eval'
 }
 
 gretty {

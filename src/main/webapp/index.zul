@@ -1,30 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<zk>
+<zk xmlns:ca="client/attribute">
 	<window title="Anchor demo">
-		<zk xmlns:ca="client/attribute">
-			<hlayout>
-				<anchor name="a1"/>
-			</hlayout>
-			<separator/>
-			<div height="100px"></div>
-			<window id="win1" ca:data-anchor="a1" ca:data-anchortitle="1. ZK Demo" title="1. ZK Demo" height="300px"
-					width="700px"
-					border="normal" style="margin:0 auto">
-				ZK Demo 1
-			</window>
-			<div height="300px"></div>
-			<window id="win2" ca:data-anchor="a1" ca:data-anchortitle="2. ZK Blog" title="2. ZK Blog" height="300px"
-					width="700px"
-					border="normal" style="margin:0 auto">
-				ZK Blog 2
-			</window>
-			<div height="300px"></div>
-			<window id="win3" ca:data-anchor="a1" ca:data-anchortitle="3. ZK SmallTalk" title="3. ZK SmallTalk"
-					height="300px" width="700px"
-					border="normal" style="margin:0 auto">
-				ZK SmallTalk 3
-			</window>
-			<div height="500px"></div>
-		</zk>
+		<style>
+			.z-anchornav-link-active {
+				color: #fff;
+				background-color: #0093f9;
+				border-radius: 4px;
+				padding: 4px 8px;
+			}
+			.z-anchornav-link-active:hover {
+				color: #fff;
+				background-color: #4fb7ff;
+			}
+		</style>
+		<hlayout>
+			<anchornav name="a1" width="300px">
+				<listbox>
+					<listitem>
+						<listcell>
+							<a ca:data-anchornav-target="@window @window">testing ZK</a>
+						</listcell>
+					</listitem>
+					<listitem>
+						<listcell>
+							<a ca:data-anchornav-target="$win2">testing ZSS</a>
+						</listcell>
+					</listitem>
+					<listitem>
+						<listcell>
+							<a ca:data-anchornav-target=".z-window .z-window:last-child">testing ZKCharts</a>
+						</listcell>
+					</listitem>
+				</listbox>
+			</anchornav>
+		</hlayout>
+		<separator/>
+		<div height="100px"></div>
+		<window id="win1" title="1. ZK" height="600px" width="700px" border="normal" style="margin:0 auto">
+			testing ZK
+		</window>
+		<div height="500px"></div>
+		<window id="win2" title="2. ZSS" height="600px" width="700px" border="normal" style="margin:0 auto">
+			testing ZSS
+			<div height="600px"></div>
+			<label>123</label>
+		</window>
+		<div height="500px"></div>
+		<window id="win3" title="3. ZKCharts" height="600px" width="700px" border="normal" style="margin:0 auto">
+			testing ZKCharts
+			<div height="600px"></div>
+			<label>123</label>
+		</window>
 	</window>
 </zk>

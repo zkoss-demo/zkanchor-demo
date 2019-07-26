@@ -1,4 +1,4 @@
-# ZK Anchor-Demo
+# ZK Anchornav-Demo
 
 Example ZK project using gradle
 
@@ -9,7 +9,7 @@ run jetty
 ./gradlew appRun
 ```
 
-http://localhost:8080/zkanchor-demo
+http://localhost:8080/zkanchornav-demo
 
 run tests
 ```
