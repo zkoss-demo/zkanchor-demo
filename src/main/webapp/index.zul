@@ -18,12 +18,13 @@
 				<grid>
 					<rows>
 						<row>
-							<a ca:data-anchornav-target="@window @window">testing ZK</a>
+							<a ca:data-anchornav-target="$win1">testing ZK</a>
 						</row>
 						<row>
 							<a ca:data-anchornav-target="$win2">testing ZSS</a>
 						</row>
 						<row>
+							<!-- using standard CSS selector-->
 							<a ca:data-anchornav-target=".z-window .z-window:last-child">testing ZKCharts</a>
 						</row>
 					</rows>
