@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zk xmlns:ca="client/attribute">
-	<window title="Anchor demo">
+	<window title="Anchornav demo">
 		<style>
 			.z-anchornav-link-active {
 				color: #fff;
@@ -14,24 +14,20 @@
 			}
 		</style>
 		<hlayout>
-			<anchornav name="a1" width="300px">
-				<listbox>
-					<listitem>
-						<listcell>
+			<anchornav width="200px">
+				<grid>
+					<rows>
+						<row>
 							<a ca:data-anchornav-target="@window @window">testing ZK</a>
-						</listcell>
-					</listitem>
-					<listitem>
-						<listcell>
+						</row>
+						<row>
 							<a ca:data-anchornav-target="$win2">testing ZSS</a>
-						</listcell>
-					</listitem>
-					<listitem>
-						<listcell>
+						</row>
+						<row>
 							<a ca:data-anchornav-target=".z-window .z-window:last-child">testing ZKCharts</a>
-						</listcell>
-					</listitem>
-				</listbox>
+						</row>
+					</rows>
+				</grid>
 			</anchornav>
 		</hlayout>
 		<separator/>
@@ -43,13 +39,11 @@
 		<window id="win2" title="2. ZSS" height="600px" width="700px" border="normal" style="margin:0 auto">
 			testing ZSS
 			<div height="600px"></div>
-			<label>123</label>
 		</window>
 		<div height="500px"></div>
 		<window id="win3" title="3. ZKCharts" height="600px" width="700px" border="normal" style="margin:0 auto">
 			testing ZKCharts
 			<div height="600px"></div>
-			<label>123</label>
 		</window>
 	</window>
 </zk>
